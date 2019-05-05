@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#adc1b4"
+    android:orientation="vertical"
+    tools:context=".AddItemActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:text="Insert Items"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:textColor="#2f9daa"
+
+            android:fontFamily="sans-serif-black"/>
+        <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add"
+
+        android:background="#617f6b"
+        android:textSize="20dp"
+        android:textColor="#2f9daa"
+        android:layout_marginTop="-15dp"
+        android:layout_margin="10dp"/></LinearLayout>
+
+
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Items name"
+        android:textSize="20dp"
+        android:textColor="#2f9daa"
+        android:layout_margin="10dp"
+        android:layout_marginTop="-15dp"
+        />
+    <EditText
+        android:id="@+id/etPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Price"
+        android:textSize="20dp"
+        android:textColor="#2f9daa"
+        android:inputType="number"
+        android:layout_margin="10dp"
+        android:layout_marginTop="-15dp"
+        />
+    <EditText
+        android:id="@+id/etDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Description"
+        android:textSize="20dp"
+        android:textColor="#2f9daa"
+        android:layout_margin="10dp"
+        android:layout_marginTop="-15dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose Image:"
+        android:textColor="#2f9daa"
+        android:layout_margin="10dp"
+        android:layout_marginTop="-10dp"
+        android:textSize="25dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Spinner
+            android:id="@+id/spinImg"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="#617f6b"
+            android:layout_margin="10dp"
+            android:layout_marginTop="-10dp"
+            android:textColor="#2f9daa"
+            >
+
+        </Spinner>
+        <Button
+            android:id="@+id/btnView"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:background="#617f6b"
+            android:text="View Image"
+            android:layout_weight="1"
+            android:layout_marginTop="-15dp"
+            android:layout_margin="10dp"
+            android:textColor="#2f9daa"
+            android:textSize="20dp"/>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="-15dp"
+        android:layout_margin="10dp"/>
+
+
+
+
+</LinearLayout>
